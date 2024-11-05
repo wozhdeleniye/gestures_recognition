@@ -1,0 +1,8 @@
+# @package _global_
+data_loader:
+  _target_: srcs.data_loader.data_loaders.get_sign_dataloader
+  path_train: data/ttv_dataset/train
+  path_val: data/ttv_dataset/val
+  batch_size: ${batch_size}
+  shuffle: true
+  num_workers: ${n_cpu}
